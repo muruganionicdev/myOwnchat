@@ -12,7 +12,7 @@ import { HttpModule } from '@angular/http';
 
 import { MomentModule } from 'angular2-moment';
 
-import { ChatsPage, ChatPage, LoginPage, AccountPage, ContactsPage } from '../pages';
+import { ChatsPage, ChatPage, LoginPage, AccountPage, ContactsPage, RegisterPage } from '../pages';
 import { CallModal, ContactModal, UserImage, CallModalTrigger, ContactAddModal, KeyboardAttach } from '../components';
 import { AttachmentService, AudioService, CallService, ChatService, ContactService, LoginService, SocketService, VideoService} from '../services';
 
@@ -28,7 +28,8 @@ import { AttachmentService, AudioService, CallService, ChatService, ContactServi
 		UserImage,
 		ContactsPage,
 		ContactAddModal,
-		KeyboardAttach
+		KeyboardAttach,
+		RegisterPage
 	],
 	imports: [
 		BrowserModule,
@@ -55,7 +56,8 @@ import { AttachmentService, AudioService, CallService, ChatService, ContactServi
 		ContactModal,
 		UserImage,
 		ContactsPage,
-		ContactAddModal
+		ContactAddModal,
+		RegisterPage
 	],
 	providers: [
 		AttachmentService,
