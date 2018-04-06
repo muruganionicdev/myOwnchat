@@ -1,0 +1,27 @@
+<ion-header>
+	<ion-navbar>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<div class="logo" ng-class="{input: input}">
+		<h1 class="a">New Registration</h1>
+		<!-- <h1 class="b">chat</h1> -->
+	</div>
+	<form (ngSubmit)="newUser()" class="login" name="login">
+		<ion-item>
+			<ion-label>Username</ion-label>
+			<ion-input type="text" [(ngModel)]="data.username" name="username"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>Password</ion-label>
+			<ion-input type="password" [(ngModel)]="data.password" name="password"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>Re-Type Password</ion-label>
+			<ion-input type="password" [(ngModel)]="data.password" name="password"></ion-input>
+		</ion-item>
+
+		<button ion-button type="submit" block color="light">Register</button>
+	</form>
+</ion-content>
