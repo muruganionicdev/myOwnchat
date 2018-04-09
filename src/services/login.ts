@@ -171,7 +171,7 @@ export class LoginService {
 			});
 		});
 	}
-	public register(){
+	public register(user){
 		this.complete = this.makeComplete();
 		return new Promise((resolve, reject) => {
 			let done = () => {

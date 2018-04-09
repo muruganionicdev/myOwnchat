@@ -5,8 +5,9 @@
 
 <ion-content padding>
 	<div class="logo" ng-class="{input: input}">
-		<h1 class="a">video</h1>
-		<h1 class="b">chat</h1>
+		<div class="app-icon">
+	        <ion-icon name="ios-chatbubbles-outline" ></ion-icon>
+	    </div>
 	</div>
 	<form (ngSubmit)="login()" class="login" name="login">
 		<ion-item>
@@ -17,8 +18,8 @@
 			<ion-label>Password</ion-label>
 			<ion-input type="password" [(ngModel)]="data.password" name="password"></ion-input>
 		</ion-item>
-		<button ion-button type="submit" block color="light">Log in</button><br>
-		<p>OR</p><br>
-		<button ion-button type="button" (click)="register()" block color="light">Register</button>
+		<button ion-button type="submit" block color="light">Log in</button>
+		<!-- <p>OR</p><br>
+		<button ion-button type="button" (click)="register()" block color="light">Register</button> -->
 	</form>
 </ion-content>

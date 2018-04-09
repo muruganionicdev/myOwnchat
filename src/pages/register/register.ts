@@ -33,7 +33,7 @@ export class RegisterPage {
 		// console.log(this.data.username);
 		this.loginService.register(this.data).then(() => {
 			
-			this.navCtrl.setRoot(ChatsPage, {}, {animate: true, direction: 'forward'});
+			//this.navCtrl.setRoot(ChatsPage, {}, {animate: true, direction: 'forward'});
 		}, data => {
 			console.log(data);
 		});
